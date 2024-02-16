@@ -29,6 +29,7 @@ class LiteRollingSwitch extends StatefulWidget {
   final Color textOnColor;
   final Color colorOn;
   final Color colorOff;
+  final Color iconContainerColor;
   final double textSize;
   final Duration animationDuration;
   final IconData iconOn;
@@ -45,6 +46,7 @@ class LiteRollingSwitch extends StatefulWidget {
     this.textSize = 14.0,
     this.colorOn = Colors.green,
     this.colorOff = Colors.red,
+    this.iconContainerColor = Colors.white
     this.iconOff = Icons.flag,
     this.iconOn = Icons.check,
     this.animationDuration = const Duration(milliseconds: 600),
@@ -187,7 +189,7 @@ class _RollingSwitchState extends State<LiteRollingSwitch>
                   width: 40,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                      shape: BoxShape.circle, color: Colors.white),
+                      shape: BoxShape.circle, color: widget.iconContainerColor),
                   child: Stack(
                     children: <Widget>[
                       Center(
