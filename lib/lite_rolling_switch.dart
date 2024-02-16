@@ -46,7 +46,7 @@ class LiteRollingSwitch extends StatefulWidget {
     this.textSize = 14.0,
     this.colorOn = Colors.green,
     this.colorOff = Colors.red,
-    this.iconContainerColor = Colors.white
+    this.iconContainerColor = Colors.white,
     this.iconOff = Icons.flag,
     this.iconOn = Icons.check,
     this.animationDuration = const Duration(milliseconds: 600),
